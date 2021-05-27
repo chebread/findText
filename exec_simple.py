@@ -1,4 +1,4 @@
-# 파일에서 문자열을 찾아요
+# 파일에서 문자열 찾기 (simple)
 import os.path
 def IsFile(file): # 파일이 존재하는가 ?
     if os.path.isfile(file):
@@ -13,26 +13,23 @@ def Find(file, text):
         return -1
     else:
         return 1
-def Result(result, text, file):
-    if result == 1:
-        return "-> %s 경로에 %s 라는 문자열이 존재해요 <-"%(file, text)
-    else:
-        return "-> %s 경로에 %s 라는 문자열은 존재하지 않아요 <-"%(file, text)
+def Exit():
+    print("Exit")
+    print("POWER BY PYTHON")
+    return exit()
 def TextInput():
-    text = str(input("문자열(q:quit): "))
+    text = str(input("String: "))
     if text == "q":
-        print("종료")
-        exit()
+        Exit()
     return text
 def PathInput():
-    file = str(input("경로(q:quit): "))
+    file = str(input("Path: "))
     if file == "q":
-        print("종료")
-        exit()
+        Exit()
     return file # 경로를 반환해요
-print("문자열 찾기")
+print("Find Text")
 while True:
     file = PathInput()
     text = TextInput()
     find = Find(file, text)
-    print(Result(find, text, file))
+    print(find)
