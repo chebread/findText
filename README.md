@@ -7,6 +7,10 @@
 자 ! `exec.py`는 기본이요 ~ `exec_simple.py'는 말그대로 간단한 버전이요 ~ `exec_continue`도 파일은 한번 불러오데, 문자열은 계속 찾는 버전이요다 🤩
 
 ### 버전
+- SimpleVersion
+✋현재 버전: v2.0 (21/5/28)
+
+- ContinueVersion
 ✋현재 버전: v1.0 (21/5/27)
 
 ### 라이센스
