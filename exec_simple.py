@@ -1,11 +1,15 @@
 # 파일에서 문자열 찾기 (simple)
 import os.path
-def IsFile(file): # 파일이 존재하는가 ?
+import sys
+def Isfile(file): # 파일이 존재하는가 ?
     if os.path.isfile(file):
         return 1 # 있어요
     else:
         return -1 # 없어요
 def Find(file, text):
+    isfile = Isfile(file)
+    if isfile == -1:
+        return -1
     load = open(file, "rb")
     _read_ = load.read()
     decoding = _read_.decode(encoding = "utf-8") # Bytes -> Str
@@ -18,7 +22,7 @@ def Exit():
     print("POWER BY PYTHON")
     return exit()
 def TextInput():
-    text = str(input("String: "))
+    text = str(input("Text: "))
     if text == "q":
         Exit()
     return text
