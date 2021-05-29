@@ -1,4 +1,4 @@
-# 파일에서 문자열 찾기 (simple)
+# # 파일에서 문자열 찾기 (terminal)
 import os.path
 import sys
 def Isfile(file): # 파일이 존재하는가 ?
@@ -22,18 +22,17 @@ def Exit():
     print("POWER BY PYTHON")
     return exit()
 def TextInput():
-    text = str(input("Text: "))
+    text = sys.argv[2]
     if text == "q":
         Exit()
     return text
 def PathInput():
-    file = str(input("Path: "))
+    file = sys.argv[1]
     if file == "q":
         Exit()
     return file # 경로를 반환해요
-print("Find Text")
-while True:
-    file = PathInput()
-    text = TextInput()
-    find = Find(file, text)
-    print(find)
+
+path = PathInput()
+text = TextInput()
+find = Find(path, text)
+print(find)
