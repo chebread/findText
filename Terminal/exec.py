@@ -1,4 +1,4 @@
-# # 파일에서 문자열 찾기 (terminal)
+# 파일에서 문자열 찾기 (terminal)
 import os.path
 import sys
 def Isfile(file): # 파일이 존재하는가 ?
