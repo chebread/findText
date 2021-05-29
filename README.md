@@ -10,9 +10,9 @@ Exec 용은 프로그램을 실행하여 사용하는 버전이에요 😋
 
 Terminal 용은 Terminal에서 바로 문자열을 찾을수 있는 버전이에요 😉
 
-- 예시
+## 예시
 
-+ 명령어
+-  명령어
 
 `/usr/bin/python3 (클론한 디렉토리 주소)/Terminal/exec.py (파일이름) (찾을 문자열)`
 
@@ -20,7 +20,7 @@ Terminal 용은 Terminal에서 바로 문자열을 찾을수 있는 버전이에
 
 `.zshrc`에 `alias findtext="/usr/bin/python3 (클론한 디렉토리주소)/Terminal/exec.py"` 추가해서 `findtext (파일이름) (찾을 문자열)`로 사용하세요 ! 😝
 
-+ 결과
+- 결과
 
 `1`
 
