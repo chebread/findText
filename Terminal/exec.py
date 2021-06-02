@@ -12,24 +12,21 @@ def Find(file, text):
         return -1
     load = open(file, "rb")
     _read_ = load.read()
+    load.close()
     decoding = _read_.decode(encoding = "utf-8") # Bytes -> Str
     if decoding.find(text) == -1:
         return -1
     else:
         return 1
-def Exit():
-    print("Exit")
-    print("POWER BY PYTHON")
-    return exit()
 def TextInput():
     text = sys.argv[2]
     if text == "q":
-        Exit()
+        return exit()
     return text
 def PathInput():
     file = sys.argv[1]
     if file == "q":
-        Exit()
+        return exit()
     return file # 경로를 반환해요
 
 path = PathInput()
