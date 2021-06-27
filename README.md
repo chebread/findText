@@ -1,5 +1,5 @@
 # 파일에서 문자열 찾기
-
+~~`findtext`의 새로운 [버전](https://github.com/developerHaneum/ft)를 사용하세요 🤩~~
 ### 만든 목적
 Vim으로 파일에 찾고싶은 문자열이 있는지 일일이 확인하기 귀찮아서 만들어봤어🤣
 
